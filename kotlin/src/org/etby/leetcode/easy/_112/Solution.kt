@@ -16,9 +16,8 @@ class Solution {
         }
 
         val lastSum = sum - root.`val`
-
-        if (lastSum == 0) {
-            return root.left == null && root.right == null
+        if (lastSum == 0 && root.left == null && root.right == null) {
+            return true
         }
 
         return hasPathSum(root.left, lastSum) || hasPathSum(root.right, lastSum)
