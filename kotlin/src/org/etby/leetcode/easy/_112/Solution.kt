@@ -21,10 +21,6 @@ class Solution {
             return root.left == null && root.right == null
         }
 
-        if (lastSum < 0) {
-            return false
-        }
-
         return hasPathSum(root.left, lastSum) || hasPathSum(root.right, lastSum)
     }
 }
