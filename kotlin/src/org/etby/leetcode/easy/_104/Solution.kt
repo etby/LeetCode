@@ -1,10 +1,10 @@
 package org.etby.leetcode.easy._104
 
-import org.etby.leetcode.easy.tree.binary.TreeNode
+import org.etby.leetcode.common.binary.TreeNode
 
 
 /**
- * Definition for a binary tree node.
+ * Definition for a binary common node.
  * class TreeNode(var `val`: Int = 0) {
  *     var left: TreeNode? = null
  *     var right: TreeNode? = null

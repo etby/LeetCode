@@ -1,4 +1,4 @@
-package org.etby.leetcode.easy.tree.binary
+package org.etby.leetcode.common.binary
 
 class TreeNode(var `val`: Int = 0) {
     var left: TreeNode? = null
