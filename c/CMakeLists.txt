@@ -3,4 +3,6 @@ project(c C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(c main.c)
+include_directories(include)
+
+add_executable(c easy/_155.c)
