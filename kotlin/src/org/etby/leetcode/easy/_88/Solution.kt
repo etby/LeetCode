@@ -1,35 +1,35 @@
 package org.etby.leetcode.easy._88
 
 class Solution {
+
     fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
-        if (n == 0) {
+        val length = m + n
+        if (n == 0 || length == 0) {
             return
         }
 
-        System.arraycopy(nums2, 0, nums1, m, n)
-        nums1.sort()
-    }
+        var p2 = 0
 
-    fun mergeError(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
-        var insertPoint = 0
-        var readPoint = 0
+        for (i in 0 until length) {
+            if (p2 >= n) break //第二组没有了
 
-        while (readPoint < n) {
-            while (insertPoint < m + readPoint && nums1[insertPoint] <= nums2[readPoint]) {
-                insertPoint++
+            val v1 = nums1[i]
+            val v2 = nums2[p2]
+
+            // 2 小于 1
+            if (v2 < v1) {
+                System.arraycopy(nums1, i, nums1, i + 1, m - (i - p2))
+                nums1[i] = v2
+                p2++
             }
 
-            insert(nums1, insertPoint, nums2[readPoint])
-            readPoint++
+            // 1 数组没有了
+            if (i >= m + p2) {
+                nums1[i] = v2
+                p2++
+            }
         }
+
     }
 
-    private fun insert(nums: IntArray, index: Int, i: Int) {
-        var needInsert = i
-        for (i in index..nums.size - index) {
-            val tmp = nums[i]
-            nums[i] = needInsert
-            needInsert = tmp
-        }
-    }
 }
