@@ -1,25 +1,26 @@
 #include <stdbool.h>
+#include <stdlib.h>
 
-#include "../common/singly-linked.h"
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-bool hasCycle(struct ListNode *head) {
+bool hasCycle(struct ListNode *head)
+{
     if (!head || !head->next)
         return false;
 
-    struct ListNode *fast = head;
+    struct ListNode *fast = head->next;
     struct ListNode *slow = head;
 
-    do {
-        fast = fast->next->next;
+    while (fast && slow)
+    {
+        if (fast == slow)
+            break;
+        fast = fast->next ? fast->next->next : fast->next;
         slow = slow->next;
-    } while (fast != NULL && fast->next != NULL && fast != slow);
+    }
 
     return fast == slow;
 }

@@ -2,15 +2,13 @@
 // Created by Etby on 2018/5/4.
 //
 
-#include "singly-linked.h"
+#include <stdlib.h>
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
+
 struct ListNode *detectCycle(struct ListNode *head) {
     if (!head || !head->next)
         return NULL;

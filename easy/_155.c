@@ -4,7 +4,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "singly-linked.h"
+
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
 
 typedef struct {
     struct ListNode *head;
@@ -95,28 +99,14 @@ int main() {
     printf("Hello, World!\n");
 
     MinStack *stack = minStackCreate(0);
-    minStackPush(stack, 2);
+    minStackPush(stack, -2);
     minStackPush(stack, 0);
-    minStackPush(stack, 3);
-    minStackPush(stack, 0);
+    minStackPush(stack, -3);
 
-    minStackPop(stack);
     printf("get num %d \n", minStackGetMin(stack));
-
     minStackPop(stack);
-    printf("get num %d \n", minStackGetMin(stack));
-
-    minStackPop(stack);
+    printf("get num %d \n", minStackTop(stack));
     printf("get num %d \n", minStackGetMin(stack));
 
     return 0;
 }
-/**
- * Your MinStack struct will be instantiated and called as such:
- * struct MinStack* obj = minStackCreate(maxSize);
- * minStackPush(obj, x);
- * minStackPop(obj);
- * int param_3 = minStackTop(obj);
- * int param_4 = minStackGetMin(obj);
- * minStackFree(obj);
- */
