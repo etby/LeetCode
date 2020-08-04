@@ -10,19 +10,19 @@ https://leetcode-cn.com/problems/two-sum/
 
 ## 代码
 
-|    语言    |  链接  |
-| :--------: | :----: |
-|     C      | 未完成 |
-|    C++     | 未完成 |
-|    Java    | 未完成 |
-|   Python   | 未完成 |
-| JavaScript | 未完成 |
-|     C#     | 未完成 |
-|    PHP     | 未完成 |
-|     GO     | 未完成 |
-|   Swift    | 未完成 |
-|    Ruby    | 未完成 |
-|    Rust    | 未完成 |
-|   Kotlin   | 未完成 |
-|   Scala    | 未完成 |
-| TypeScript | 未完成 |
+|    语言    |                             链接                             |
+| :--------: | :----------------------------------------------------------: |
+|     C      | https://github.com/etby/LeetCode/blob/master/problemset/1/c/main.c |
+|    C++     |                            未完成                            |
+|    Java    | https://github.com/etby/LeetCode/blob/master/problemset/1/java/main.java |
+|   Python   |                            未完成                            |
+| JavaScript |                            未完成                            |
+|     C#     |                            未完成                            |
+|    PHP     |                            未完成                            |
+|     GO     |                            未完成                            |
+|   Swift    |                            未完成                            |
+|    Ruby    |                            未完成                            |
+|    Rust    |                            未完成                            |
+|   Kotlin   |                            未完成                            |
+|   Scala    |                            未完成                            |
+| TypeScript |                            未完成                            |
