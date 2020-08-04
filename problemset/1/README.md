@@ -23,6 +23,6 @@ https://leetcode-cn.com/problems/two-sum/
 |   Swift    |                            未完成                            |
 |    Ruby    |                            未完成                            |
 |    Rust    |                            未完成                            |
-|   Kotlin   |                            未完成                            |
+|   Kotlin   | https://github.com/etby/LeetCode/blob/master/problemset/1/kotlin/main.kt |
 |   Scala    |                            未完成                            |
 | TypeScript |                            未完成                            |
